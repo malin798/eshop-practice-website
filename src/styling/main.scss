@@ -1,1 +1,7 @@
-//import all scss files here!
+@import './header.scss';
+@import './hamburger-menu.scss';
+@import './variables-mixins.scss';
+
+body {
+  font-family: 'Didact Gothic', sans-serif;
+}

@@ -1,0 +1,71 @@
+@import './variables-mixins.scss';
+
+header {
+  display: flex;  
+  flex-direction: column;
+  width: $desktop-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+
+  .top-right-header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    svg {
+      height: 25px;
+      width: 25px;
+  
+      &.pink {
+        color: rgb(223, 135, 116);;
+      }
+    }
+  }
+  
+  .top-left-header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.bottom-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .bottom-left-header-section {
+    svg {
+      height: 25px;
+      width: 25px;
+    }
+  }
+  
+  .bottom-middle-header-section {
+    svg {
+      transform: rotate(180deg);
+      margin-bottom: -3px;
+      color: $light-grey;
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  .bottom-right-header-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

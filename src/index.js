@@ -3,8 +3,16 @@ import Mustache from 'mustache'
 import './styling/main.scss';
 
 const headerViewModel = {
-  H2: "Header in header.mustache"
- };
+   "breadcrumb_menu": [
+      { "breadcrumb_item": "Start", "svg": true },
+      { "breadcrumb_item": "Loreal", "svg": true },
+      { "breadcrumb_item": "Makeup", "svg": true },
+      { "breadcrumb_item": "Ögonmakeup", "svg": true },
+      { "breadcrumb_item": "Mascara", "svg": true },
+      { "breadcrumb_item": "Telescopic Mascara Black", "active": true }
+    ]
+};
+
 
 $(document).ready(function() {
    
