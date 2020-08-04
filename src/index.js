@@ -48,7 +48,7 @@ $(document).ready(function() {
       const thumbnailSrc = $(this).data("img-src")
       $(".small-thumbnail-image").removeClass("active")
       $(this).addClass("active")
-      console.log(thumbnailSrc)
+ 
       $(".large-gallery-image").css('background-image', `url("${thumbnailSrc}")`)
    })
 
@@ -73,7 +73,6 @@ $(document).ready(function() {
          translateAmount = 0
          $(".previous-button").css("display", "none")
       }
-      console.log(translateAmount)
       
       $(".thumbnail-gallery").css('transform', `translateX(-${translateAmount}px)`)
    })  
