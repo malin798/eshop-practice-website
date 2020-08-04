@@ -58,7 +58,7 @@ module.exports = {
         },
         {
           from: 'src/templates/**/*.mustache',
-          to: '/templates/[name].[ext]'
+          to: 'templates/[name].[ext]'
         }
       ]
     })
