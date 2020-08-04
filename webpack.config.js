@@ -53,7 +53,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: './*.html' }
+        { from: 'src/**/*.html' }
       ]
     })
   ]
