@@ -1,0 +1,122 @@
+@import './variables-mixins.scss';
+
+.product-top {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin: 0 15px;
+}
+
+.product-image-gallery {
+  position: relative;
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 35px;
+    bottom: -20px;
+
+    @media (min-width: 668px) {
+      bottom: -30px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .next-button {
+    position: absolute;
+    left: calc(#{$mobile-gallery-size} + 3px);
+
+    @media (min-width: 668px) {
+      left: calc(#{$desktop-gallery-size} + 10px);
+    }
+  }
+
+  .previous-button {
+    display: none;
+    position: absolute;
+    left: -30px;
+
+    @media (min-width: 668px) {
+      left: -40px;
+    }
+  }
+}
+
+.large-gallery-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcf5f2;
+  border-radius: 50%;
+  width: $mobile-gallery-size;
+  height: $mobile-gallery-size;
+
+  @media (min-width: 668px) {
+    width: $desktop-gallery-size;
+    height: $desktop-gallery-size;
+  }
+}
+
+.large-gallery-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: inherit;
+  width: calc(#{$mobile-gallery-size} - 50px);
+  height: calc(#{$mobile-gallery-size} - 50px);
+  border-radius: 50%;
+
+  @media (min-width: 668px) {
+    width: calc(#{$desktop-gallery-size} - 130px);
+    height: calc(#{$desktop-gallery-size} - 130px);
+  }
+}
+
+.thumbnail-gallery-container {
+  position: absolute;
+  bottom: -40px;
+  width: $mobile-gallery-size;
+  height: 60px;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+
+  @media (min-width: 668px) {
+    width: $desktop-gallery-size;
+
+  }
+}
+
+.thumbnail-gallery {
+  display: flex;
+  width: fit-content;
+  padding: 0 15px;
+  transition: 1s ease-in-out;
+}
+
+.small-thumbnail-image {
+  width: 40px;
+  height: 40px;
+  margin: 0 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: #F4E9E0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+
+  @media (min-width: 668px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.small-thumbnail-image.active {
+  border: 2px solid rgb(91, 21, 83)
+}

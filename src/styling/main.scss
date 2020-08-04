@@ -1,7 +1,21 @@
 @import './header.scss';
 @import './hamburger-menu.scss';
 @import './variables-mixins.scss';
+@import './product-page.scss';
+@import './footer.scss';
 
 body {
   font-family: 'Didact Gothic', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
 }

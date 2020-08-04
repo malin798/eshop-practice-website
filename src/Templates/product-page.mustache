@@ -1,0 +1,17 @@
+<section class="product-image-gallery">
+  <div class="large-gallery-image-container">
+    <div class="large-gallery-image" style="background-image: url({{large_image}});">
+    </div>
+  </div>
+  <section class="thumbnail-gallery-container" id="thumbnail-gallery-container">
+    <div class="thumbnail-gallery" id="thumbnail-gallery">
+      {{#thumbnail_images}}
+        <div class="small-thumbnail-image" style="background-image: url({{image}})" data-img-src="{{image}}">
+        </div>
+      {{/thumbnail_images}}
+    </div>
+    
+  </section>
+    <button class="previous-button">&#60;</button>  
+    <button class="next-button">&#62;</button>
+<section>
